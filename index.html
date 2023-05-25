@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,174 @@
     <link rel="stylesheet" href="./assets/libs/bootstrap5/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    <div class="jubtron">
-        <h1>Hello World!</h1>
-    </div>
-    <button class="btn btn-primary">
-        Hello World!
-    </button>
 
-    <script src="./assets/libs/bootstrap5/bootstrap.bundle.min.js"></script>    
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 sidebar">
+                <div class="mx-auto sidebar-logo">
+                    <img src="./assets/image/logo.png" class="w-100" alt="">
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item">
+                            Tools
+                        </li>
+                        <li class="nav-item">
+                            <img src="./assets/image/up.svg" alt="">
+                            <a class="nav-link" data-bs-toggle="pill" href="#home1">My Inventory</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./assets/image/up.svg" alt="">
+                            <a class="nav-link" data-bs-toggle="pill" href="#home2">My Uploads</a>
+                        </li>
+                        <li class="nav-item">
+                            Crafting Resource
+                        </li>
+                        <li class="nav-item">
+                            <img src="./assets/image/book.svg" alt="">
+                            <a class="nav-link" href="#">Character body Documentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./assets/image/book.svg" alt="">
+                            <a class="nav-link disabled" href="#">Hats and Glasses Documentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./assets/image/book.svg" alt="">
+                            <a class="nav-link disabled" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="logoutGuard">
+                    <hr style="width:240px">
+                    <div class="logoutBtn">
+                        <button>
+                            <a class="nav-link disabled" href="#"><img src="./assets/image/logout.svg" alt="">Logout</a>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+            <div class="col main">
+                <!-- <div class="header container-fluid mt-6">
+                    <div class="row">
+                        <div class="col-sm-8"></div>
+                        <div class="col-sm-4 row">
+                            <div class="col">
+                                <button class="btn btn-bell">
+                                    <img src="./assets/image/bell.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button class="btn ">
+                                    <img src="./assets/image/cloud.svg" class="col" alt="">
+                                    <div class="col">
+                                        upload
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col row">
+                                <button class="btn col">
+                                    <img src="./assets/image/camera.svg" alt="">
+                                </button>
+                                <div class="col">
+                                    Admin
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane container-fluid fade" id="home1">
+                        <div class="mb-define" style="font-size:13px">My Inventory Items</div>
+                        <div class="mb-define">
+                            <h1 class="font-bold tab-title">items</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 row">
+                                <div class="col">
+                                    <input class="col tagsearch defineBtn dm-3">
+                                    <select class="form-select search col-sm-5 defineBtn dm-3">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="pagicount col-sm-4">
+                                    <select class="form-select defineBtn dm-3">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="displayMethod col-sm-3 row">
+                                    <button class="btn col-sm-6 dm-3">
+                                        <img src="./assets/image/listbtn.svg" alt="">
+                                    </button>
+                                    <button class="btn col-sm-6 dm-3">
+                                        <img src="./assets/image/containBtn.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <button class="btn defineBtn">
+                                    Date
+                                </button>
+                            </div>
+                        </div>
+                        <div id="tabContent">
+
+                        </div>
+                    </div>
+                    <div class="tab-pane container-fluid fade" id="home2">
+                        <div class="mb-define" style="font-size:13px">My Inventory Items</div>
+                        <div class="mb-define">
+                            <h1 class="font-bold tab-title">items</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 row">
+                                <div class="col">
+                                    <input class="col tagsearch defineBtn dm-3">
+                                    <select class="form-select search col-sm-5 defineBtn dm-3">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="pagicount col-sm-4">
+                                    <select class="form-select defineBtn dm-3">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="displayMethod col-sm-3 row">
+                                    <button class="btn col-sm-6 dm-3">
+                                        <img src="./assets/image/listbtn.svg" alt="">
+                                    </button>
+                                    <button class="btn col-sm-6 dm-3">
+                                        <img src="./assets/image/containBtn.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <button class="btn defineBtn">
+                                    Date
+                                </button>
+                            </div>
+                        </div>
+                        <div id="tabContent">
+
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/libs/bootstrap5/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/custom.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,149 @@
+:root{
+    --main-color: #e4e7e9;
+    --main-subcolor: #51565f;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #1b1b1e;
+    color: var(--main-color);
+}
+
+/* sidebar */
+
+.sidebar{
+    background-color: #121214;
+    min-height: 100vh;
+    width: 240px;
+}
+
+.row> .sidebar{
+    padding: 0px !important;
+}
+
+.sidebar-title{
+    font-size: 13.5px;
+    --tw-text-opacity: 1;
+    color: rgb(228 231 233/var(--tw-text-opacity));
+    font-weight: 700;
+}
+
+.sidebar-logo{
+    width: 170px;
+    margin-top: 2rem;
+}
+
+.bg-gradiant-green{
+    background-image: linear-gradient(118.76deg,#ccf273 7.09%,#b1f794 50.43%,#5be16e 103.7%);
+}
+
+.nav-link{
+    color: #777f8c;
+    font-size: 13px;
+}
+
+.nav-link a {
+    padding-left: 0px !important;
+}
+
+.nav-link:focus, .nav-link:hover,
+.nav-item img:focus, .nav-item img:hover{
+    font-weight: 700;
+    font-size: 13px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(118.76deg,#ccf273 7.09%,#b1f794 50.43%,#5be16e 103.7%);
+}
+hr{
+    margin: 0px;
+}
+
+.logoutGuard{
+    position: absolute;
+    bottom: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logoutBtn{
+    padding: 32px  !important;
+}
+
+.logoutBtn img{
+    height: 20.36px;
+    width: 32px;
+}
+
+.logoutBtn button{
+    color: #51565f;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    background-color: var(--bs-btn-bg);
+}
+
+.listimg{
+    height: 20.36px;
+    width: 32px;
+    padding: 0px;
+}
+
+.nav-item *{
+    align-items: center;
+}
+
+.logoutGuard{
+    margin-top: 1px solid #e4e7e9;
+}
+/* main */
+
+.main{
+    margin: 0px;
+    padding-left: 32px; 
+    padding-right: 16px; 
+    padding-bottom: 30px;
+}
+
+
+.btn-bell{
+    background-image: linear-gradient(102.2deg,#ff0844 -6.18%,#ffb199 93.33%);
+}
+
+.font-bold{
+    font-weight: 700;
+}
+.tab-title{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.defineBtn{
+    --tw-text-opacity: 1;
+    color: rgb(119 127 140);
+    font-size: 10px;
+    content: var(--tw-content);
+    border-radius: 48px;
+    background-color: rgb(48 50 59);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    line-height: 20px;
+}
+
+.tagsearch{
+    width: 223px;
+    padding-right: 59px;
+    padding-left: 1.75rem;
+}
+
+/* spacing */
+.mt-6{
+    margin-top: 1.5rem;
+}
+
+.dm-3{
+    margin: 0.75rem;
+}
+
+.mb-define{
+    margin-bottom: 2rem;
+}
